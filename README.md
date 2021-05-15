@@ -32,3 +32,4 @@ Please feel free to connect for any suggestions or doubts!!!
 
 
 The credit for dataset used for training goes to https://www.kaggle.com/mohansacharya/graduate-admissions
+The credit for image used in html file for background goes to https://blog.unpakt.com/wp-content/uploads/2017/06/63064200_l-education-graduation-and-people-concept-silhouettes-of-many-happy-students-in-gowns-throwing-mortarboards-in-air-1024x651.jpg
