@@ -1,0 +1,64 @@
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+   <body>
+      <title>Admission_Prediction</title>
+         <div style="background-image: url('https://blog.unpakt.com/wp-content/uploads/2017/06/63064200_l-education-graduation-and-people-concept-silhouettes-of-many-happy-students-in-gowns-throwing-mortarboards-in-air-1024x651.jpg');
+                   background-repeat: no-repeat;
+                   background-attachment: fixed;
+                   background-size: cover; 
+                   background-blend-mode: screen;
+                   backdrop-filter: blur(5px);">
+ 	    <div class="container">
+ 	    <h1 style="color:white; font-family:courier; font-size:400%;"><b>Welcome to prediction</b></h1>
+		<div class="row">
+		  <form action="http://localhost:5000" method="POST">
+		  	<div class="col-sm-9">
+			 <div class="form-group  purple-border">
+				  <label style="color:red; font-family:courier; font-size:200%;" for="comment"><b>GRE_Score(Out of 340):</b></label>
+				  <textarea class="form-control" rows="2" id="query1" name="query1" rows="2" cols="5" autofocus>{{query1}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label style="color:red; font-family:courier; font-size:200%;" for="comment"><b>TOEFL_Score(Out of 120):</b></label>
+				  <textarea class="form-control" rows="2" id="query2" name="query2" rows="2" cols="5" autofocus>{{query2}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label style="color:red; font-family:courier; font-size:200%;" for="comment"><b>University_Rating(Out of 5):</b></label>
+				  <textarea class="form-control" rows="2" id="query3" name="query3" rows="2" cols="5" autofocus>{{query3}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label style="color:red; font-family:courier; font-size:200%;" for="comment"><b>SOP(Statement of Purpose):(Out of 5)</b></label>
+				  <textarea class="form-control" rows="2" id="query4" name="query4" rows="2" cols="5" autofocus>{{query4}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label style="color:red; font-family:courier; font-size:200%;" for="comment"><b>LOR(Letter of Recommendation):(Out of 5)</b></label>
+				  <textarea class="form-control" rows="2" id="query5" name="query5" rows="2" cols="5" autofocus>{{query5}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label style="color:red; font-family:courier; font-size:200%;" for="comment"><b>CGPA:(Out of 10)</b></label>
+				  <textarea class="form-control" rows="2" id="query6" name="query6" rows="2" cols="5" autofocus>{{query6}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label style="color:red; font-family:courier; font-size:200%;" for="comment"><b>Research Opportunity:(1 or 0)</b></label>
+				  <textarea class="form-control" rows="2" id="query7" name="query7" rows="2" cols="5" autofocus>{{query7}}</textarea>
+			</div>
+			</div>
+			<div class="col-sm-3">
+			<button style="color:white; font-family:courier; font-size:200%;" type="submit" class="btn btn-primary" name="submit"><b>SUBMIT</b></button>
+			</div>
+		  </form>
+		  </div>
+		  
+		<div class="row"> 
+			<div class="col-sm-9">
+			<textarea style="color:red; font-family:courier; font-size:130%;" class="form-control" rows="2" id="comment" name="query8" rows="2" cols="5" autofocus>{{output1}}</textarea>
+			<textarea style="color:red; font-family:courier; font-size:130%;" class="form-control" rows="2" id="comment" name="query9" rows="2" cols="5" autofocus>{{output2}}</textarea>
+			</div>
+		</div>
+	</div>		
+   </body>
+</html>
