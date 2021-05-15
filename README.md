@@ -26,6 +26,7 @@ To run the prject, follow below steps:
 2.  Activate environment
 3.  >pip install -r requirement.txt
 4.  >python app.py
+5.  Navigate to URL http://localhost:5000
 
 
 Please feel free to connect for any suggestions or doubts!!!
