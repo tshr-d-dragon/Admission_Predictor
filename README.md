@@ -18,15 +18,18 @@ CaseStudy.csv is the csv file of Case Study considered for prediction
 app.py file gives the walkthrough over the deployment of project in flask. 
 LinearRegression.sav is the saved file of model used in flask.
 
-plots folder contains the saved images of all plots of EDA and model performances
+plots folder contains the saved images of all plots of EDA and model performances.
+
+templates folder contains the html template.
 
 
 To run the prject, follow below steps:
-1.  Create anaconda environment
-2.  Activate environment
-3.  >pip install -r requirement.txt
-4.  >python app.py
-5.  Navigate to URL http://localhost:5000
+1.  Ensure that you are in the project home directory
+2.  Create anaconda environment
+3.  Activate environment
+4.  >pip install -r requirement.txt
+5.  >python app.py
+6.  Navigate to URL http://localhost:5000
 
 
 Please feel free to connect for any suggestions or doubts!!!
