@@ -22,7 +22,7 @@ import xgboost as xgb
 from sklearn.preprocessing import StandardScaler,MinMaxScaler,RobustScaler
 from sklearn.model_selection import cross_val_score, StratifiedKFold, KFold
 
-df = pd.read_csv('C:/Users/1636740/Desktop/tshr/backup/bakcup/datasets_14872_228180_Admission_Predict_Ver1.1/datasets_14872_228180_Admission_Predict_Ver1.1.csv')
+df = pd.read_csv('/datasets_14872_228180_Admission_Predict_Ver1.1/datasets_14872_228180_Admission_Predict_Ver1.1.csv')
 # print(df.describe())
 # print(df.info())
 # print(df.columns)
@@ -406,43 +406,8 @@ model.add(Dense(1, activation = 'relu'))
 model.compile(loss = 'mse', optimizer='adam')
 
 early_stop = EarlyStopping(monitor='val_loss' , mode = 'min', verbose=1, patience=10)
-# =============================================================================
-# Kfold in DL
-# =============================================================================
-# def create_baseline():
-#     # create model
-#     model = Sequential()
-
-#     model.add(Dense(7, activation = 'relu'))
-#     # model.add(Dropout(0.3))
-    
-#     model.add(Dense(5, activation = 'relu'))
-#     # model.add(Dropout(0.2))
-    
-#     model.add(Dense(2, activation = 'relu'))
-#     # model.add(Dropout(0.2))
-    
-#     # model.add(Dense(3, activation = 'relu'))
-#     # model.add(Dropout(0.2))
-    
-#     model.add(Dense(1, activation = 'relu'))
-    
-#     model.compile(loss = 'mse', optimizer='adam')
-    
-#     # early_stop = EarlyStopping(monitor='val_loss' , mode = 'min', verbose=1, patience=10)
-
-#     return model
-# # evaluate model with standardized dataset
-# estimator = tf.keras.wrappers.scikit_learn.KerasClassifier(build_fn=create_baseline, epochs=10, batch_size=5, verbose=0 )
-# kfold = KFold(n_splits=10, shuffle=True, random_state=42)
-# results = cross_val_score(estimator, X2_train, y_train, cv=kfold, scoring = 'neg_mean_squared_error')
-# print("Baseline: %.2f%% (%.2f%%)" % (results.mean()*100, results.std()*100))
-# =============================================================================
-# 
-# =============================================================================
 
 model.fit(x=X2_train, y = y_train, epochs=1000, validation_data=(X2_test,y_test), callbacks=[early_stop])
-
 
 losses = pd.DataFrame(model.history.history)
 
@@ -562,25 +527,6 @@ results_comp = pd.DataFrame(list(zip(lm_cs_pred,rg_cs_pred,gbm_cs_pred,rf_cs_pre
 
 df_cs[['lm_cs_pred','rg_cs_pred', 'gbm_cs_pred','rf_cs_pred','xbgrT_cs_pred','NN_cs_pred','COA_cs_ave']] = results_comp[['lm_cs_pred', 'rg_cs_pred', 'gbm_cs_pred','rf_cs_pred','xbgrT_cs_pred','NN_cs_pred','COA_cs_ave']]
 
-df_cs.to_csv('C:/Users/Balaji/Documents/tshr/python_projects/datasets_14872_228180_Admission_Predict_Ver1.1/CaseStudy.csv')
+df_cs.to_csv('/datasets_14872_228180_Admission_Predict_Ver1.1/CaseStudy.csv')
 
-# #garbage
-# # final1, final2, final3 ,final4, final5, final6, final7 = [],[],[],[],[],[],[]
-# # for i in df_cs_results:
-# #     if abs(df_cs_results[lm_cs_pred[i]] - df_cs_results[gbm_cs_pred[i]]) > 0.45:
-# #         final1[i] = final1.append(max(lm_cs_pred[i],gbm_cs_pred[i]))
-# #     elif abs(lm_cs_pred[i] - rf_cs_pred[i]) > 0.45:
-# #         final2[i] = final2.append(max(lm_cs_pred[i],rf_cs_pred[i]))
-# #     elif abs(gbm_cs_pred[i] - rf_cs_pred[i]) > 0.45:
-# #         final3[i] = final3.append(max(gbm_cs_pred[i],rf_cs_pred[i]))
-# #     elif abs(gbm_cs_pred[i] - lm_cs_pred[i]) > 0.45:
-# #         final4[i] = final4.append(max(gbm_cs_pred[i],lm_cs_pred[i]))
-# #     elif abs(rf_cs_pred[i] - lm_cs_pred[i]) > 0.45:
-# #         final5[i] = final5.append(max(rf_cs_pred[i],lm_cs_pred[i]))
-# #     elif abs(rf_cs_pred[i] - gbm_cs_pred[i]) > 0.45:
-# #         final6[i] = final6.append(max(rf_cs_pred[i],gbm_cs_pred[i]))
-# #     else :
-# #         final7[i] = final7.append((lm_cs_pred+gbm_cs_pred+rf_cs_pred)/3)
-
-# # final_ = (final1+final2+final3+final4+final5+final6)/6
 
