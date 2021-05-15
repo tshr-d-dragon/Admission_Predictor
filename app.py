@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Apr 23 22:18:35 2021
-
-@author: 1636740
-
-image credits
+html image credits:
 https://blog.unpakt.com/wp-content/uploads/2017/06/63064200_l-education-graduation-and-people-concept-silhouettes-of-many-happy-students-in-gowns-throwing-mortarboards-in-air-1024x651.jpg
 """
 
@@ -13,7 +9,7 @@ from flask import Flask, request, render_template
 import pickle
 
 
-filename = 'C:/Users/1636740/Desktop/tshr/backup/bakcup/datasets_14872_228180_Admission_Predict_Ver1.1/LinearRegression.sav'
+filename = '/datasets_14872_228180_Admission_Predict_Ver1.1/LinearRegression.sav'
 LinearRegression = pickle.load(open(filename, 'rb'))
 
 
