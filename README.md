@@ -11,6 +11,8 @@ This projects helps predicting the chance of an admit (in %) provided the follow
 7. Research Opportunity:  (1 or 0)
 
 
+## Project Structure
+
 Admission_Predict.ipynb file gives the walkthrough over the complete project. 
 Model.pkl file is the saved pickle file of final model.
 CaseStudy.csv is the csv file of Case Study considered for prediction
@@ -23,7 +25,7 @@ plots folder contains the saved images of all plots of EDA and model performance
 templates folder contains the html template.
 
 
-To run the prject, follow below steps:
+## To run the prject, follow below steps:
 1.  Ensure that you are in the project home directory
 2.  Create anaconda environment
 3.  Activate environment
@@ -32,8 +34,10 @@ To run the prject, follow below steps:
 6.  Navigate to URL http://localhost:5000
 
 
-Please feel free to connect for any suggestions or doubts!!!
+### Please feel free to connect for any suggestions or doubts!!!
 
 
-The credit for dataset used for training goes to https://www.kaggle.com/mohansacharya/graduate-admissions
-The credit for image used in html file for background goes to https://blog.unpakt.com/wp-content/uploads/2017/06/63064200_l-education-graduation-and-people-concept-silhouettes-of-many-happy-students-in-gowns-throwing-mortarboards-in-air-1024x651.jpg
+## Credits:
+1.  I have modified https://github.com/pik1989/MLProject-ChurnPrediction/tree/main/templates html template for flask
+2.  The credit for dataset used for training goes to https://www.kaggle.com/mohansacharya/graduate-admissions
+3.  The credit for image used in html file for background goes to https://blog.unpakt.com/wp-content/uploads/2017/06/63064200_l-education-graduation-and-people-concept-silhouettes-of-many-happy-students-in-gowns-throwing-mortarboards-in-air-1024x651.jpg
