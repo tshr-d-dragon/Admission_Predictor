@@ -22,3 +22,13 @@ app.py file gives the walkthrough over the deployment of project in flask.
 LinearRegression.sav is the saved file of model used in flask.
 
 plots folder contains the saved images of all plots of EDA and model performances
+
+
+To run the prject, follow below steps:
+1.  Create anaconda environment
+2.  Activate environment
+3.  >pip install -r requirement.txt
+4.  >python app.py
+
+
+Please feel free to connect for any suggestions or doubts!!!
