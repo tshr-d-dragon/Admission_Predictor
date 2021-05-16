@@ -25,7 +25,7 @@ plots folder contains the saved images of all plots of EDA and model performance
 templates folder contains the html template.
 
 
-## To run the prject, follow below steps:
+## To run the prject, follow below steps
 1.  Ensure that you are in the project home directory
 2.  Create anaconda environment
 3.  Activate environment
@@ -37,7 +37,7 @@ templates folder contains the html template.
 ### Please feel free to connect for any suggestions or doubts!!!
 
 
-## Credits:
+## Credits
 1.  I have modified https://github.com/pik1989/MLProject-ChurnPrediction/tree/main/templates html template for flask
 2.  The credit for dataset used for training goes to https://www.kaggle.com/mohansacharya/graduate-admissions
 3.  The credit for image used in html file for background goes to https://blog.unpakt.com/wp-content/uploads/2017/06/63064200_l-education-graduation-and-people-concept-silhouettes-of-many-happy-students-in-gowns-throwing-mortarboards-in-air-1024x651.jpg
