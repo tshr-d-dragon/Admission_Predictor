@@ -1,5 +1,5 @@
 # Admission_Predictor
-### A ML Regression project to predict chance of an admit with deployment
+### A ML Regression project with deployment to predict chance of an admit
 
 This projects helps predicting the chance of an admit (in %) provided the following features:
 1. GRE Scores: (Out of 340)
